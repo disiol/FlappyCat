@@ -25,6 +25,8 @@ namespace FalapyCat.Scripts.Game
         private int _score = 0; //The player's score.
         private const string BestScore = "bestScore";
         private int _lastBestScore = 0;
+       
+        public float scrollingObjectScrollSpeed;
 
 
         void Awake()

@@ -48,11 +48,19 @@ namespace FalapyCat.Scripts.Game
 
             if (other.gameObject.CompareTag("Wall"))
             {
-                isDead = true;
-                //...tell the Animator about it...
-                anim.SetTrigger("Die");
-                //...and tell the game control about it.
-                _gameControl.BirdDied();
+                _gameControl.live -= 1;
+                if (_gameControl.live ==0)
+                {
+                    isDead = true;
+                    //...tell the Animator about it...
+                    anim.SetTrigger("Die");
+                    //...and tell the game control about it.
+                    _gameControl.BirdDied();
+                }
+                else
+                {
+                    //TODO  pause how window ads
+                }
             }
         }
     }

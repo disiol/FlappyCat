@@ -6,12 +6,12 @@ namespace FalapyCat.Scripts.Game.Background
     {
         private float _moveBackgroundSpeed;
 
-        private Vector2 offset = Vector2.zero;
+        private Vector2 _offset = Vector2.zero;
 
-        private Material material;
+        private Material _material;
 
         private static readonly int MainTex = Shader.PropertyToID("_MainTex");
-        private GameControl gameControl;
+        private GameControl _gameControl;
 
 
         void Start()
@@ -23,14 +23,14 @@ namespace FalapyCat.Scripts.Game.Background
 
         public void UpdateSpeed()
         {
-            gameControl = GameControl.instance;
-            _moveBackgroundSpeed = gameControl.moveBackgroundSpeed;
+            _gameControl = GameControl.instance;
+            _moveBackgroundSpeed = _gameControl.moveBackgroundSpeed;
         }
 
         private void BackgroundLopGetTextureOffset()
         {
-            material = GetComponent<Renderer>().material;
-            offset = material.GetTextureOffset(MainTex);
+            _material = GetComponent<Renderer>().material;
+            _offset = _material.GetTextureOffset(MainTex);
         }
 
         void Update()
@@ -46,9 +46,9 @@ namespace FalapyCat.Scripts.Game.Background
             //     offset.x = 0;
             // }
             BackgroundLopGetTextureOffset();
-            offset.x += _moveBackgroundSpeed * Time.deltaTime;
+            _offset.x += _moveBackgroundSpeed * Time.deltaTime;
 
-            material.SetTextureOffset(MainTex, offset);
+            _material.SetTextureOffset(MainTex, _offset);
         }
     }
 }
