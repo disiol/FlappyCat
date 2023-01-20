@@ -991,7 +991,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2374053298962062533, guid: 59150aa0b62bea088b53b2ab5462df69, type: 3}
+    - {fileID: 2407652853192978805, guid: 59150aa0b62bea088b53b2ab5462df69, type: 3}
+    - {fileID: 2374053298962062539, guid: 59150aa0b62bea088b53b2ab5462df69, type: 3}
+    - {fileID: 2374053298962062532, guid: 59150aa0b62bea088b53b2ab5462df69, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 59150aa0b62bea088b53b2ab5462df69, type: 3}
 --- !u!224 &1410443005 stripped
 RectTransform:
@@ -1064,11 +1068,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 738097171}
   scorePanel: {fileID: 738097171}
+  live: 0
   gameOverText: {fileID: 2012150021}
   gameOverTextPanel: {fileID: 680545084}
   isGameOver: 0
-  scrollSpeed: -1.5
-  moveBackground: 2
+  moveBackgroundSpeed: 0
 --- !u!1 &1878015111
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,99 +1,109 @@
 ﻿using System;
-using UnityEngine;
-using System.Collections;
 using TMPro;
-using UnityEngine.UI;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
-public class GameControl : MonoBehaviour
+namespace FalapyCat.Scripts.Game
 {
-    public static GameControl instance;
-   
-    [Header("Sore"),SerializeField] private GameObject scoreText;
-    [SerializeField] private GameObject scorePanel;
-
-    [Header("GameOver"),SerializeField] private GameObject gameOverText;
-    [SerializeField] private GameObject gameOverTextPanel;
-    public bool isGameOver = false; //Is the game over?
-    [Header("ScrollingObject")]
-    public float scrollSpeed = -1.5f;
-
-    [Header("Background")]
-    public float moveBackground;
-
-
-    private int score = 0; //The player's score.
-    private const string BestScore = "bestScore";
-    private int lastBestScore = 0;
-
-
-    void Awake()
+    public class GameControl : MonoBehaviour
     {
-        //If we don't currently have a game control...
-        if (instance == null)
-            //...set this one to be it...
-            instance = this;
-        //...otherwise...
-        else if (instance != this)
-            //...destroy this one because it is a duplicate.
-            Destroy(gameObject);
-    }
+        public static GameControl instance;
 
-    void Update()
-    {
-        //If the game is over and the player has pressed some input...
-        if (isGameOver && Input.GetMouseButtonDown(0))
+        [Header("Sore"), SerializeField] private GameObject scoreText;
+        [SerializeField] private GameObject scorePanel;
+
+        [Header("Live"), SerializeField] public int live;
+
+        [Header("GameOver"), SerializeField] private GameObject gameOverText;
+        [SerializeField] private GameObject gameOverTextPanel;
+        public bool isGameOver = false; //Is the game over?
+
+        [Header("Background")] public float moveBackgroundSpeed;
+
+
+        private int _score = 0; //The player's score.
+        private const string BestScore = "bestScore";
+        private int _lastBestScore = 0;
+
+
+        void Awake()
         {
-            //...reload the current scene.
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-    }
-
-    public void BirdScored()
-    {
-        //The bird can't score if the game is over.
-        if (!isGameOver)
-        {
-            score++;
-            //...and adjust the score text.
-            scoreText.GetComponent<TextMeshProUGUI>().text = "Score: " + score.ToString();
+            if (instance == null)
+                instance = this;
+            else if (instance != this)
+                Destroy(gameObject);
         }
 
-        //If the game is not over, increase the score...
-    }
-
-    public void BirdDied()
-    {
-        SafeBestPoints();
-        scorePanel.SetActive(false);
-
-        gameOverTextPanel.SetActive(true);
-        string textGamover = gameOverText.GetComponent<TextMeshProUGUI>().text;
-        Debug.Log("textGamover = " + textGamover);
-        gameOverText.GetComponent<TextMeshProUGUI>().text = String.Format(textGamover, score, lastBestScore);
-        //Activate the game over text.
-
-        isGameOver = true;
-
-        //Set the game to be over.
-    }
-
-    private void SafeBestPoints()
-    {
-        if (PlayerPrefs.HasKey(BestScore))
+        void Update()
         {
-            lastBestScore = PlayerPrefs.GetInt(BestScore);
-            if (lastBestScore < score)
+            IsGameOver();
+        }
+
+        private void IsGameOver()
+        {
+            IfTheGameIsOverAndThePlayerHasPressedSomeInput();
+        }
+
+        private void IfTheGameIsOverAndThePlayerHasPressedSomeInput()
+        {
+            if (isGameOver && Input.GetMouseButtonDown(0))
             {
-                PlayerPrefs.SetInt(BestScore, score);
-                PlayerPrefs.Save();
+                ReloadTheCurrentScene();
             }
         }
-        else
+
+        private static void ReloadTheCurrentScene()
         {
-            lastBestScore = score;
-            PlayerPrefs.SetInt(BestScore, score);
-            PlayerPrefs.Save();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        public void BirdScored()
+        {
+            //The bird can't score if the game is over.
+            if (!isGameOver)
+            {
+                _score++;
+                //...and adjust the score text.
+                scoreText.GetComponent<TextMeshProUGUI>().text = "Score: " + _score.ToString();
+            }
+
+            //If the game is not over, increase the score...
+        }
+
+        public void BirdDied()
+        {
+            SafeBestPoints();
+            scorePanel.SetActive(false);
+
+            gameOverTextPanel.SetActive(true);
+            string textGamover = gameOverText.GetComponent<TextMeshProUGUI>().text;
+            Debug.Log("textGamover = " + textGamover);
+            gameOverText.GetComponent<TextMeshProUGUI>().text = String.Format(textGamover, _score, _lastBestScore);
+            //Activate the game over text.
+
+            isGameOver = true;
+
+            //Set the game to be over.
+        }
+
+        private void SafeBestPoints()
+        {
+            if (PlayerPrefs.HasKey(BestScore))
+            {
+                _lastBestScore = PlayerPrefs.GetInt(BestScore);
+                if (_lastBestScore < _score)
+                {
+                    PlayerPrefs.SetInt(BestScore, _score);
+                    PlayerPrefs.Save();
+                }
+            }
+            else
+            {
+                _lastBestScore = _score;
+                PlayerPrefs.SetInt(BestScore, _score);
+                PlayerPrefs.Save();
+            }
         }
     }
 }

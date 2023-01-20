@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class Colum : MonoBehaviour 
+namespace FalapyCat.Scripts.Game
 {
-    void OnTriggerEnter2D(Collider2D other)
+    public class Colum : MonoBehaviour 
     {
-        if(other.GetComponent<Cat>() != null)
+        void OnTriggerEnter2D(Collider2D other)
         {
-            //If the bird hits the trigger collider in between the columns then
-            //tell the game control that the bird scored.
-            GameControl.instance.BirdScored();
+            if(other.GetComponent<Cat>() != null)
+            {
+                //If the bird hits the trigger collider in between the columns then
+                //tell the game control that the bird scored.
+                GameControl.instance.BirdScored();
+            }
         }
     }
 }
