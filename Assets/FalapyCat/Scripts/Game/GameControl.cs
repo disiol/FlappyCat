@@ -26,7 +26,7 @@ namespace FalapyCat.Scripts.Game
         private const string BestScore = "bestScore";
         private int _lastBestScore = 0;
        
-        public float scrollingObjectScrollSpeed;
+        [FormerlySerializedAs("scrollingObjectScrollSpeed")] public float scrollingColumScrollSpeed;
 
 
         void Awake()

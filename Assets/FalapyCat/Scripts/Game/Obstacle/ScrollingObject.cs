@@ -24,7 +24,7 @@ namespace FalapyCat.Scripts.Game.Obstacle
         {
             _gameControl = GameControl.instance;
 
-            _scrollSpeed = _gameControl.scrollingObjectScrollSpeed;
+            _scrollSpeed = _gameControl.scrollingColumScrollSpeed;
         }
 
         void Update()

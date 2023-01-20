@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FalapyCat.Scripts.Game.Background
+namespace Game.Background
 {
     public class BackgroundSize : MonoBehaviour
     {
