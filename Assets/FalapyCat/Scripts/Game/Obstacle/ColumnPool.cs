@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace FalapyCat.Scripts.Game
+namespace FalapyCat.Scripts.Game.Obstacle
 {
     public class ColumnPool : MonoBehaviour 
     {
