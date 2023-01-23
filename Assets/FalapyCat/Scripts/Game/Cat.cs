@@ -10,6 +10,8 @@ namespace FalapyCat.Scripts.Game
         private Animator anim; //Reference to the Animator component.
         private Rigidbody2D rb2d; //Holds a reference to the Rigidbody2D component of the bird.
         private GameControl _gameControl;
+        
+        private static readonly int Flap = Animator.StringToHash("Flap");
 
         void Start()
         {
@@ -30,7 +32,7 @@ namespace FalapyCat.Scripts.Game
                 if (Input.GetMouseButtonDown(0))
                 {
                     //...tell the animator about it and then...
-                    anim.SetTrigger("Flap");
+                    anim.SetTrigger(Flap);
                     //...zero out the birds current y velocity before...
                     rb2d.velocity = Vector2.zero;
                     //    new Vector2(rb2d.velocity.x, 0);
@@ -45,10 +47,11 @@ namespace FalapyCat.Scripts.Game
             // Zero out the bird's velocity
             rb2d.velocity = Vector2.zero;
             // If the bird collides with something set it to dead...
+            Debug.Log(" Cat OnCollisionEnter2D name " + other.gameObject.name);
 
             if (other.gameObject.CompareTag("Wall"))
             {
-                Debug.Log("other.gameObject.CompareTag = Wall");
+                Debug.Log(" Cat OnCollisionEnter2D other.gameObject.CompareTag = Wall");
 
                 _gameControl.live--;
                 if (_gameControl.live == 0)
