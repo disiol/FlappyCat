@@ -12,6 +12,7 @@ namespace FalapyCat.Scripts.Game
         private GameControl _gameControl;
         
         private static readonly int Flap = Animator.StringToHash("Flap");
+        private static readonly int Die = Animator.StringToHash("Die");
 
         void Start()
         {
@@ -53,19 +54,24 @@ namespace FalapyCat.Scripts.Game
             {
                 Debug.Log(" Cat OnCollisionEnter2D other.gameObject.CompareTag = Wall");
 
-                _gameControl.live--;
-                if (_gameControl.live == 0)
-                {
-                    isDead = true;
-                    //...tell the Animator about it...
-                    anim.SetTrigger("Die");
-                    //...and tell the game control about it.
-                    _gameControl.BirdDied();
-                }
-                else if (_gameControl.live > 0)
-                {
-                    //TODO  pause how window ads
-                }
+                CheckHeroDie();
+            }
+        }
+
+        public void CheckHeroDie()
+        {
+            _gameControl.live--;
+            if (_gameControl.live == 0)
+            {
+                isDead = true;
+                //...tell the Animator about it...
+                anim.SetTrigger(Die);
+                //...and tell the game control about it.
+                _gameControl.HeroDie();
+            }
+            else if (_gameControl.live > 0)
+            {
+                //TODO  pause how window ads
             }
         }
     }
