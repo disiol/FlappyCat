@@ -2,7 +2,7 @@
 
 namespace FalapyCat.Scripts.Game
 {
-    public class Cat : MonoBehaviour
+    public class Hero : MonoBehaviour
     {
         public float upForce; //Upward force of the "flap".
         private bool isDead = false; //Has the player collided with a wall?

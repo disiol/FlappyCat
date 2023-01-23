@@ -60,7 +60,7 @@ namespace FalapyCat.Scripts.Game
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        public void BirdScored()
+        public void HeroScored()
         {
             //The bird can't score if the game is over.
             if (!isGameOver)
@@ -73,7 +73,7 @@ namespace FalapyCat.Scripts.Game
             //If the game is not over, increase the score...
         }
 
-        public void BirdDied()
+        public void HeroDie()
         {
             SafeBestPoints();
             scorePanel.SetActive(false);
