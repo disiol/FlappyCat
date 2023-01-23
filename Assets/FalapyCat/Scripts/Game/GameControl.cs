@@ -31,6 +31,7 @@ namespace FalapyCat.Scripts.Game
        
         private GameObject _saunds;
         private GameObject _saundDead;
+        private GameObject _saundBackground;
 
 
         void Awake()
@@ -42,6 +43,7 @@ namespace FalapyCat.Scripts.Game
             
             _saunds = GameObject.Find("Sounds");
             _saundDead = _saunds.transform.Find("Dead").gameObject;
+            _saundBackground = _saunds.transform.Find("Background").gameObject;
         }
 
         void Update()
@@ -93,7 +95,7 @@ namespace FalapyCat.Scripts.Game
 
             isGameOver = true;
             _saundDead.SetActive(true);
-
+            _saundBackground.SetActive(false);
             //Set the game to be over.
         }
 
