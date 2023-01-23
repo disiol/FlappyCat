@@ -71,10 +71,16 @@ namespace FalapyCat.Scripts.Game
 
         public void HeroScored()
         {
+            Debug.Log(" GameControl _score = " + _score);
+
             //The bird can't score if the game is over.
             if (!isGameOver)
             {
+                Debug.Log(" GameControl _score ++ = " + _score);
+
                 _score++;
+                Debug.Log(" GameControl _score  = " + _score);
+
                 //...and adjust the score text.
                 scoreText.GetComponent<TextMeshProUGUI>().text = "Score: " + _score;
             }

@@ -16,14 +16,13 @@ namespace FalapyCat.Scripts.Game.Obstacle
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (col.GetComponent<Hero>() != null)
+            Debug.Log(" HeroScoredController OnTriggerEnter2D name " + col.gameObject.name);
+            if (col.tag.Equals("Player"))
             {
                 _saundCoin.SetActive(true);
                 //If the bird hits the trigger collider in between the columns then
                 //tell the game control that the bird scored.
                 GameControl.instance.HeroScored();
-                _saundCoin.SetActive(false);
-                
             }
         }
     }
