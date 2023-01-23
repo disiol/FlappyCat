@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 4702547651045295508}
   - component: {fileID: 4702547651045295509}
   - component: {fileID: 4702547651045295510}
+  - component: {fileID: 7102732745169894580}
   m_Layer: 0
   m_Name: ColumnDuwn
   m_TagString: Wall
@@ -219,6 +220,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.17, y: 8.479668}
   m_EdgeRadius: 0
+--- !u!114 &7102732745169894580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702547651045295511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9a0b2935644ee495e284765b637825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4702547651145551350
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +243,7 @@ GameObject:
   - component: {fileID: 4702547651145551355}
   - component: {fileID: 4702547651145551348}
   - component: {fileID: 4702547651145551349}
+  - component: {fileID: 8998560803786311431}
   m_Layer: 0
   m_Name: ColumnUp
   m_TagString: Wall
@@ -330,3 +344,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.17, y: 8.334715}
   m_EdgeRadius: 0
+--- !u!114 &8998560803786311431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702547651145551350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9a0b2935644ee495e284765b637825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

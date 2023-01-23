@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace FalapyCat.Scripts.Game.Obstacle
 {
@@ -8,16 +9,18 @@ namespace FalapyCat.Scripts.Game.Obstacle
 
         private void Awake()
         {
-            this._gameControllerObject = GameObject.Find("GameControllerObject");
+            this._gameControllerObject = GameObject.Find("GameController");
         }
 
-        void OnTriggerEnter2D(Collider2D other)
+         void OnCollisionEnter2D(Collision2D col)
         {
-            var collider2D1 = other;
-            if (collider2D1.gameObject.CompareTag("Player"))
+            Debug.Log(" CollisionWithObstacle OnCollisionEnter2D name " + col.gameObject.name);
+        
+            if (col.gameObject.CompareTag("Player"))
             {
-                 this._gameControllerObject.GetComponent<Hero>().CheckHeroDie();
+                this._gameControllerObject.GetComponent<Hero>().CheckHeroDie();
             }
         }
+         
     }
 }

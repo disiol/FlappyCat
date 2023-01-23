@@ -4,6 +4,8 @@ namespace FalapyCat.Scripts.Game
 {
     public class Hero : MonoBehaviour
     {
+        [Header("Player"), SerializeField] private GameObject player;
+
         public float upForce; //Upward force of the "flap".
         private bool isDead = false; //Has the player collided with a wall?
 
@@ -19,9 +21,9 @@ namespace FalapyCat.Scripts.Game
             _gameControl = GameControl.instance;
 
             //Get reference to the Animator component attached to this GameObject.
-            anim = GetComponent<Animator>();
+            anim = player.GetComponent<Animator>();
             //Get and store a reference to the Rigidbody2D attached to this GameObject.
-            rb2d = GetComponent<Rigidbody2D>();
+            rb2d =  player.GetComponent<Rigidbody2D>();
         }
 
         void Update()
@@ -48,11 +50,11 @@ namespace FalapyCat.Scripts.Game
             // Zero out the bird's velocity
             rb2d.velocity = Vector2.zero;
             // If the bird collides with something set it to dead...
-            Debug.Log(" Cat OnCollisionEnter2D name " + other.gameObject.name);
+            Debug.Log(" Hero OnCollisionEnter2D name " + other.gameObject.name);
 
             if (other.gameObject.CompareTag("Wall"))
             {
-                Debug.Log(" Cat OnCollisionEnter2D other.gameObject.CompareTag = Wall");
+                Debug.Log(" Hero OnCollisionEnter2D other.gameObject.CompareTag = Wall");
 
                 CheckHeroDie();
             }

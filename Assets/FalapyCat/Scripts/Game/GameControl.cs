@@ -9,6 +9,7 @@ namespace FalapyCat.Scripts.Game
     public class GameControl : MonoBehaviour
     {
         public static GameControl instance;
+       
 
         [Header("Sore"), SerializeField] private GameObject scoreText;
         [SerializeField] private GameObject scorePanel;
