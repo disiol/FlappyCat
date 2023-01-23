@@ -28,6 +28,9 @@ namespace FalapyCat.Scripts.Game
         private int _lastBestScore = 0;
        
         [FormerlySerializedAs("scrollingObjectScrollSpeed")] public float scrollingColumScrollSpeed;
+       
+        private GameObject _saunds;
+        private GameObject _saundDead;
 
 
         void Awake()
@@ -36,6 +39,9 @@ namespace FalapyCat.Scripts.Game
                 instance = this;
             else if (instance != this)
                 Destroy(gameObject);
+            
+            _saunds = GameObject.Find("Sounds");
+            _saundDead = _saunds.transform.Find("Dead").gameObject;
         }
 
         void Update()
@@ -86,6 +92,7 @@ namespace FalapyCat.Scripts.Game
             //Activate the game over text.
 
             isGameOver = true;
+            _saundDead.SetActive(true);
 
             //Set the game to be over.
         }
