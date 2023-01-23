@@ -8,6 +8,30 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 14
+    y: 125
+    width: 1200
+    height: 729
+  m_ShowMode: 0
+  m_Title: Project Settings
+  m_RootView: {fileID: 4}
+  m_MinSize: {x: 310, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_Maximized: 0
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -19,12 +43,62 @@ MonoBehaviour:
     width: 1600
     height: 811
   m_ShowMode: 4
-  m_Title: Project
-  m_RootView: {fileID: 2}
+  m_Title: Scene
+  m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
---- !u!114 &2
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectSettingsWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1200
+    height: 729
+  m_MinSize: {x: 310, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1200
+    height: 729
+  m_MinSize: {x: 310, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  vertical: 0
+  controlID: 2777
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,9 +111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
-  - {fileID: 4}
-  - {fileID: 5}
+  - {fileID: 6}
+  - {fileID: 7}
+  - {fileID: 8}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -52,7 +126,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &3
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &4
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,10 +161,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 6}
-  - {fileID: 7}
-  - {fileID: 8}
   - {fileID: 9}
+  - {fileID: 10}
+  - {fileID: 11}
+  - {fileID: 12}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -100,8 +174,8 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 102
---- !u!114 &5
+  controlID: 110
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +196,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &6
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,19 +209,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 11}
+  - {fileID: 13}
+  - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 755
+    width: 740
     height: 761
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 40
---- !u!114 &7
+  controlID: 111
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,18 +236,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 755
+    x: 740
     y: 0
-    width: 175
+    width: 225
     height: 761
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 14}
+  - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &8
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,19 +262,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 930
+    x: 965
     y: 0
-    width: 310
+    width: 275
     height: 761
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 22}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 13}
+  - {fileID: 22}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &9
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -221,13 +295,13 @@ MonoBehaviour:
     height: 761
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 15}
-  - {fileID: 12}
+  - {fileID: 21}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &10
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -237,23 +311,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 755
+    width: 740
     height: 387
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 24}
   m_Panes:
-  - {fileID: 18}
+  - {fileID: 24}
+  - {fileID: 16}
+  - {fileID: 15}
   m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &11
+  m_LastSelected: 2
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -270,16 +346,128 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 387
-    width: 755
+    width: 740
     height: 374
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 23}
   m_Panes:
-  - {fileID: 17}
+  - {fileID: 23}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &12
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96679c94f341d407ea812939f3c540bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Unity Mediation - Ad Units
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 119
+    width: 754
+    height: 366
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49106e6757b1648ffaf94d23129de3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Unity Mediation - Code Generator
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 119
+    width: 754
+    height: 366
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13854, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 310, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Project Settings
+    m_Image: {fileID: -5712115415447495865, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 14
+    y: 125
+    width: 1200
+    height: 708
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_PosLeft: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 0}
+  m_Scope: 1
+  m_SplitterFlex: 0.2
+  m_SearchText: 
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 9c4b6b8c
+    m_LastClickedID: -1939125348
+    m_ExpandedIDs: a01a5fa600000000c53aba5a
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -309,9 +497,9 @@ MonoBehaviour:
     m_SaveData: []
   progressMessageClearTime: -1
   notificationClearTime: -1
-  timeSinceLastRotation: 3157.7506437810002
+  timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 0
+  currentTrackingStatusHasUpdate: 1
   currentStatusEntriesHasUpdate: 1
   repositoryProgressHasUpdate: 1
   appManagerProgressHasUpdate: 1
@@ -408,144 +596,11 @@ MonoBehaviour:
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys:
-        - 00000000000000001000000000000000
-        - ced6ae2745fe55e798fe54aa4a7f8cd8
-        - 0639aaa6459685e678aafb1e151fc00a
-        - 59150aa0b62bea088b53b2ab5462df69
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/FalapyCat
-          label: FalapyCat
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/FalapyCat/Prefabs
-          label: Prefabs
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/FalapyCat/Prefabs/Back.prefab
-          label: Back.prefab
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/FalapyCat/Prefabs/Back.prefab
-            fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Back.prefab
-            projectPath: Assets/FalapyCat/Prefabs/Back.prefab
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
+        keys: []
+        values: []
       folders:
-        keys:
-        - Assets
-        - Assets/FalapyCat
-        - Assets/FalapyCat/Prefabs
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/FalapyCat
-          label: FalapyCat
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/FalapyCat/Prefabs
-          label: Prefabs
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
+        keys: []
+        values: []
       checkedFileNodes:
         keys: []
         values: []
@@ -574,78 +629,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets
-        label: Assets
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/FalapyCat
-        label: FalapyCat
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/FalapyCat/Prefabs
-        label: Prefabs
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/FalapyCat/Prefabs/Back.prefab
-        label: Back.prefab
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/FalapyCat/Prefabs/Back.prefab
-          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Back.prefab
-          projectPath: Assets/FalapyCat/Prefabs/Back.prefab
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -665,19 +648,13 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries:
-    - path: Assets/FalapyCat/Prefabs/Back.prefab
-      fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Back.prefab
-      projectPath: Assets/FalapyCat/Prefabs/Back.prefab
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 1 changed file
+    gitStatusEntries: []
+    changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-01-20T23:54:23.893+02:00
+      updatedTimeString: 2023-01-21T01:04:00.502+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-01-21T01:03:11.425+02:00
+      updatedTimeString: 2023-01-21T02:16:05.557+02:00
       cacheType: 6
     lastLocksChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
@@ -686,6 +663,368 @@ MonoBehaviour:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 60544e303c24fa5d3e73ea016f1094daa5969ea6
+      mergeA: 
+      mergeB: 
+      authorName: disiol
+      authorEmail: denisimus_games@ukr.net
+      commitEmail: denisimus_games@ukr.net
+      commitName: disiol
+      summary: Make Dead
+      description: 'Make Dead.
+
+        Ad Mediation skripts'
+      timeString: 2023-01-21T01:04:58.000+02:00
+      commitTimeString: 2023-01-21T01:04:58.000+02:00
+      changes:
+      - path: Assets/Editor.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor.meta
+        projectPath: Assets/Editor.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Editor/MediationAdapterDependencies.xml
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor/MediationAdapterDependencies.xml
+        projectPath: Assets/Editor/MediationAdapterDependencies.xml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Editor/MediationAdapterDependencies.xml.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor/MediationAdapterDependencies.xml.meta
+        projectPath: Assets/Editor/MediationAdapterDependencies.xml.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Prefabs/Back.prefab
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Back.prefab
+        projectPath: Assets/FalapyCat/Prefabs/Back.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Prefabs/Colums.prefab
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Colums.prefab
+        projectPath: Assets/FalapyCat/Prefabs/Colums.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scenes/Game.unity
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scenes/Game.unity
+        projectPath: Assets/FalapyCat/Scenes/Game.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Cat.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Cat.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Cat.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+        projectPath: Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+        projectPath: Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/GameControl.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/GameControl.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/GameControl.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+        originalPath: Assets/FalapyCat/Scripts/Game/Colum.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+        originalPath: Assets/FalapyCat/Scripts/Game/ColumnPool.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver.meta
+        projectPath: Assets/PlayServicesResolver.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor.meta
+        projectPath: Assets/PlayServicesResolver/Editor.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+        projectPath: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+        projectPath: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+        projectPath: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+        projectPath: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+        projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+        projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+        projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+        projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+        projectPath: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+        projectPath: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages/manifest.json
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Packages/manifest.json
+        projectPath: Packages/manifest.json
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Packages/packages-lock.json
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Packages/packages-lock.json
+        projectPath: Packages/packages-lock.json
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings/GvhProjectSettings.xml
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/ProjectSettings/GvhProjectSettings.xml
+        projectPath: ProjectSettings/GvhProjectSettings.xml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+        projectPath: ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings/Layouts/default-2021.dwlt
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/UserSettings/Layouts/default-2021.dwlt
+        projectPath: UserSettings/Layouts/default-2021.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 35658be1c10715d5d43537718b88ddcdadf70b61
+      mergeA: 
+      mergeB: 
+      authorName: disiol
+      authorEmail: denisimus_games@ukr.net
+      commitEmail: denisimus_games@ukr.net
+      commitName: disiol
+      summary: Refactoring
+      description: Refactoring
+      timeString: 2023-01-21T00:17:48.000+02:00
+      commitTimeString: 2023-01-21T00:17:48.000+02:00
+      changes:
+      - path: Assets/FalapyCat/Scripts/Game/Background.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background.meta
+        projectPath: Assets/FalapyCat/Scripts/Game/Background.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs.meta
+        projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs.meta
+        projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs.meta
+        projectPath: Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/ScrollingObject.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/ScrollingObject.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/ScrollingObject.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/ScrollingObject.cs.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/ScrollingObject.cs.meta
+        projectPath: Assets/FalapyCat/Scripts/Game/ScrollingObject.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/MesegeBox.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/MesegeBox.meta
+        projectPath: Assets/FalapyCat/Scripts/MesegeBox.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/MesegeBox/Menu.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/MesegeBox/Menu.cs
+        projectPath: Assets/FalapyCat/Scripts/MesegeBox/Menu.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/MesegeBox/Menu.cs.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/MesegeBox/Menu.cs.meta
+        projectPath: Assets/FalapyCat/Scripts/MesegeBox/Menu.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs
+        projectPath: Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs.meta
+        projectPath: Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+    - commitID: e5079b9dfafb497c7131e419b8da8cc9c8d0ac49
+      mergeA: 
+      mergeB: 
+      authorName: disiol
+      authorEmail: denisimus_games@ukr.net
+      commitEmail: denisimus_games@ukr.net
+      commitName: disiol
+      summary: Refactoring
+      description: Refactoring
+      timeString: 2023-01-21T00:17:41.000+02:00
+      commitTimeString: 2023-01-21T00:17:41.000+02:00
+      changes:
+      - path: .idea/.idea.FlappyCat/.idea/.gitignore
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/.idea/.idea.FlappyCat/.idea/.gitignore
+        projectPath: .idea/.idea.FlappyCat/.idea/.gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: .idea/.idea.FlappyCat/.idea/indexLayout.xml
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/.idea/.idea.FlappyCat/.idea/indexLayout.xml
+        projectPath: .idea/.idea.FlappyCat/.idea/indexLayout.xml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: .idea/.idea.FlappyCat/.idea/vcs.xml
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/.idea/.idea.FlappyCat/.idea/vcs.xml
+        projectPath: .idea/.idea.FlappyCat/.idea/vcs.xml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Prefabs/Back.prefab
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Back.prefab
+        projectPath: Assets/FalapyCat/Prefabs/Back.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scenes/Game.unity
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scenes/Game.unity
+        projectPath: Assets/FalapyCat/Scenes/Game.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Cat.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Cat.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Cat.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Colum.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Colum.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Colum.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/ColumnPool.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/ColumnPool.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/ColumnPool.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/GameControl.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/GameControl.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/GameControl.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings/TagManager.asset
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/ProjectSettings/TagManager.asset
+        projectPath: ProjectSettings/TagManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: 5453a2ae8747e2ddb2c528f399a2e5a966a68440
       mergeA: 
       mergeB: 
@@ -6321,16 +6660,378 @@ MonoBehaviour:
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-    statusAhead: 0
+    statusAhead: 1
     lastLogChangedEvent:
-      updatedTimeString: 2023-01-21T00:17:20.383+02:00
+      updatedTimeString: 2023-01-21T01:04:58.936+02:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2023-01-21T01:04:58.926+02:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 60544e303c24fa5d3e73ea016f1094daa5969ea6
+        mergeA: 
+        mergeB: 
+        authorName: disiol
+        authorEmail: denisimus_games@ukr.net
+        commitEmail: denisimus_games@ukr.net
+        commitName: disiol
+        summary: Make Dead
+        description: 'Make Dead.
+
+          Ad Mediation skripts'
+        timeString: 2023-01-21T01:04:58.000+02:00
+        commitTimeString: 2023-01-21T01:04:58.000+02:00
+        changes:
+        - path: Assets/Editor.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor.meta
+          projectPath: Assets/Editor.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Editor/MediationAdapterDependencies.xml
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor/MediationAdapterDependencies.xml
+          projectPath: Assets/Editor/MediationAdapterDependencies.xml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/Editor/MediationAdapterDependencies.xml.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor/MediationAdapterDependencies.xml.meta
+          projectPath: Assets/Editor/MediationAdapterDependencies.xml.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Prefabs/Back.prefab
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Back.prefab
+          projectPath: Assets/FalapyCat/Prefabs/Back.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Prefabs/Colums.prefab
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Colums.prefab
+          projectPath: Assets/FalapyCat/Prefabs/Colums.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scenes/Game.unity
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scenes/Game.unity
+          projectPath: Assets/FalapyCat/Scenes/Game.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Cat.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Cat.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Cat.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+          projectPath: Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+          projectPath: Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/GameControl.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/GameControl.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/GameControl.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+          originalPath: Assets/FalapyCat/Scripts/Game/Colum.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+          originalPath: Assets/FalapyCat/Scripts/Game/ColumnPool.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver.meta
+          projectPath: Assets/PlayServicesResolver.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor.meta
+          projectPath: Assets/PlayServicesResolver/Editor.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+          projectPath: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+          projectPath: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+          projectPath: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+          projectPath: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+          projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+          projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+          projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+          projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+          projectPath: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+          projectPath: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages/manifest.json
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Packages/manifest.json
+          projectPath: Packages/manifest.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Packages/packages-lock.json
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Packages/packages-lock.json
+          projectPath: Packages/packages-lock.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings/GvhProjectSettings.xml
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/ProjectSettings/GvhProjectSettings.xml
+          projectPath: ProjectSettings/GvhProjectSettings.xml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+          projectPath: ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings/Layouts/default-2021.dwlt
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/UserSettings/Layouts/default-2021.dwlt
+          projectPath: UserSettings/Layouts/default-2021.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 35658be1c10715d5d43537718b88ddcdadf70b61
+        mergeA: 
+        mergeB: 
+        authorName: disiol
+        authorEmail: denisimus_games@ukr.net
+        commitEmail: denisimus_games@ukr.net
+        commitName: disiol
+        summary: Refactoring
+        description: Refactoring
+        timeString: 2023-01-21T00:17:48.000+02:00
+        commitTimeString: 2023-01-21T00:17:48.000+02:00
+        changes:
+        - path: Assets/FalapyCat/Scripts/Game/Background.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background.meta
+          projectPath: Assets/FalapyCat/Scripts/Game/Background.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs.meta
+          projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs.meta
+          projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundSize.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs.meta
+          projectPath: Assets/FalapyCat/Scripts/Game/RepeatingBackground.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/ScrollingObject.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/ScrollingObject.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/ScrollingObject.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/ScrollingObject.cs.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/ScrollingObject.cs.meta
+          projectPath: Assets/FalapyCat/Scripts/Game/ScrollingObject.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/MesegeBox.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/MesegeBox.meta
+          projectPath: Assets/FalapyCat/Scripts/MesegeBox.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/MesegeBox/Menu.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/MesegeBox/Menu.cs
+          projectPath: Assets/FalapyCat/Scripts/MesegeBox/Menu.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/MesegeBox/Menu.cs.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/MesegeBox/Menu.cs.meta
+          projectPath: Assets/FalapyCat/Scripts/MesegeBox/Menu.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs
+          projectPath: Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs.meta
+          projectPath: Assets/FalapyCat/Scripts/MesegeBox/MessageBox.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+      - commitID: e5079b9dfafb497c7131e419b8da8cc9c8d0ac49
+        mergeA: 
+        mergeB: 
+        authorName: disiol
+        authorEmail: denisimus_games@ukr.net
+        commitEmail: denisimus_games@ukr.net
+        commitName: disiol
+        summary: Refactoring
+        description: Refactoring
+        timeString: 2023-01-21T00:17:41.000+02:00
+        commitTimeString: 2023-01-21T00:17:41.000+02:00
+        changes:
+        - path: .idea/.idea.FlappyCat/.idea/.gitignore
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/.idea/.idea.FlappyCat/.idea/.gitignore
+          projectPath: .idea/.idea.FlappyCat/.idea/.gitignore
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: .idea/.idea.FlappyCat/.idea/indexLayout.xml
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/.idea/.idea.FlappyCat/.idea/indexLayout.xml
+          projectPath: .idea/.idea.FlappyCat/.idea/indexLayout.xml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: .idea/.idea.FlappyCat/.idea/vcs.xml
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/.idea/.idea.FlappyCat/.idea/vcs.xml
+          projectPath: .idea/.idea.FlappyCat/.idea/vcs.xml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Prefabs/Back.prefab
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Back.prefab
+          projectPath: Assets/FalapyCat/Prefabs/Back.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scenes/Game.unity
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scenes/Game.unity
+          projectPath: Assets/FalapyCat/Scenes/Game.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Cat.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Cat.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Cat.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Colum.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Colum.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Colum.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/ColumnPool.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/ColumnPool.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/ColumnPool.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/GameControl.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/GameControl.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/GameControl.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings/TagManager.asset
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/ProjectSettings/TagManager.asset
+          projectPath: ProjectSettings/TagManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: 5453a2ae8747e2ddb2c528f399a2e5a966a68440
         mergeA: 
         mergeB: 
@@ -12044,28 +12745,533 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      statusAhead: 0
-      selectedIndex: -1
+      statusAhead: 1
+      selectedIndex: 0
     selectedEntry:
-      commitID: 
+      commitID: 60544e303c24fa5d3e73ea016f1094daa5969ea6
       mergeA: 
       mergeB: 
-      authorName: 
-      authorEmail: 
-      commitEmail: 
-      commitName: 
-      summary: 
-      description: 
-      timeString: 0001-01-01T00:00:00.000+00:00
-      commitTimeString: 0001-01-01T00:00:00.000+00:00
-      changes: []
+      authorName: disiol
+      authorEmail: denisimus_games@ukr.net
+      commitEmail: denisimus_games@ukr.net
+      commitName: disiol
+      summary: Make Dead
+      description: 'Make Dead.
+
+        Ad Mediation skripts'
+      timeString: 2023-01-21T01:04:58.000+02:00
+      commitTimeString: 2023-01-21T01:04:58.000+02:00
+      changes:
+      - path: Assets/Editor.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor.meta
+        projectPath: Assets/Editor.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Editor/MediationAdapterDependencies.xml
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor/MediationAdapterDependencies.xml
+        projectPath: Assets/Editor/MediationAdapterDependencies.xml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/Editor/MediationAdapterDependencies.xml.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor/MediationAdapterDependencies.xml.meta
+        projectPath: Assets/Editor/MediationAdapterDependencies.xml.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Prefabs/Back.prefab
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Back.prefab
+        projectPath: Assets/FalapyCat/Prefabs/Back.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Prefabs/Colums.prefab
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Colums.prefab
+        projectPath: Assets/FalapyCat/Prefabs/Colums.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scenes/Game.unity
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scenes/Game.unity
+        projectPath: Assets/FalapyCat/Scenes/Game.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Cat.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Cat.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Cat.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+        projectPath: Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+        projectPath: Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/GameControl.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/GameControl.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/GameControl.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+        originalPath: Assets/FalapyCat/Scripts/Game/Colum.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+        projectPath: Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+        originalPath: Assets/FalapyCat/Scripts/Game/ColumnPool.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver.meta
+        projectPath: Assets/PlayServicesResolver.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor.meta
+        projectPath: Assets/PlayServicesResolver/Editor.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+        projectPath: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+        projectPath: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+        projectPath: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+        projectPath: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+        projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+        projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+        projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+        projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+        projectPath: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+        projectPath: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages/manifest.json
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Packages/manifest.json
+        projectPath: Packages/manifest.json
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Packages/packages-lock.json
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Packages/packages-lock.json
+        projectPath: Packages/packages-lock.json
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings/GvhProjectSettings.xml
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/ProjectSettings/GvhProjectSettings.xml
+        projectPath: ProjectSettings/GvhProjectSettings.xml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+        projectPath: ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings/Layouts/default-2021.dwlt
+        fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/UserSettings/Layouts/default-2021.dwlt
+        projectPath: UserSettings/Layouts/default-2021.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     treeChanges:
       assets:
         keys: []
         values: []
       folders:
-        keys: []
-        values: []
+        keys:
+        - Assets
+        - Assets/Editor
+        - Assets/FalapyCat
+        - Assets/FalapyCat/Prefabs
+        - Assets/FalapyCat/Scenes
+        - Assets/FalapyCat/Scripts
+        - Assets/FalapyCat/Scripts/Game
+        - Assets/FalapyCat/Scripts/Game/Background
+        - Assets/FalapyCat/Scripts/Game/Obstacle
+        - Assets/PlayServicesResolver
+        - Assets/PlayServicesResolver/Editor
+        - Packages
+        - ProjectSettings
+        - ProjectSettings/Packages
+        - ProjectSettings/Packages/com.unity.services.mediation
+        - UserSettings
+        - UserSettings/Layouts
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Editor
+          label: Editor
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/FalapyCat
+          label: FalapyCat
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/FalapyCat/Prefabs
+          label: Prefabs
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/FalapyCat/Scenes
+          label: Scenes
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts
+          label: Scripts
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game
+          label: Game
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Background
+          label: Background
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/FalapyCat/Scripts/Game/Obstacle
+          label: Obstacle
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/PlayServicesResolver
+          label: PlayServicesResolver
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/PlayServicesResolver/Editor
+          label: Editor
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages
+          label: Packages
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: ProjectSettings
+          label: ProjectSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: ProjectSettings/Packages
+          label: Packages
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: ProjectSettings/Packages/com.unity.services.mediation
+          label: com.unity.services.mediation
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings
+          label: UserSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings/Layouts
+          label: Layouts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -12075,7 +13281,871 @@ MonoBehaviour:
       isSelectable: 1
       isCheckable: 0
       isUsingGlobalSelection: 0
-      nodes: []
+      nodes:
+      - path: 
+        label: 
+        level: -1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets
+        label: Assets
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Editor.meta
+        label: Editor.meta
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Editor.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor.meta
+          projectPath: Assets/Editor.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/Editor
+        label: Editor
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Editor/MediationAdapterDependencies.xml
+        label: MediationAdapterDependencies.xml
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Editor/MediationAdapterDependencies.xml
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor/MediationAdapterDependencies.xml
+          projectPath: Assets/Editor/MediationAdapterDependencies.xml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/Editor/MediationAdapterDependencies.xml.meta
+        label: MediationAdapterDependencies.xml.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Editor/MediationAdapterDependencies.xml.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/Editor/MediationAdapterDependencies.xml.meta
+          projectPath: Assets/Editor/MediationAdapterDependencies.xml.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/FalapyCat
+        label: FalapyCat
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Prefabs
+        label: Prefabs
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Prefabs/Back.prefab
+        label: Back.prefab
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/FalapyCat/Prefabs/Back.prefab
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Back.prefab
+          projectPath: Assets/FalapyCat/Prefabs/Back.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Prefabs/Colums.prefab
+        label: Colums.prefab
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/FalapyCat/Prefabs/Colums.prefab
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Prefabs/Colums.prefab
+          projectPath: Assets/FalapyCat/Prefabs/Colums.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scenes
+        label: Scenes
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scenes/Game.unity
+        label: Game.unity
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/FalapyCat/Scenes/Game.unity
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scenes/Game.unity
+          projectPath: Assets/FalapyCat/Scenes/Game.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts
+        label: Scripts
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game
+        label: Game
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Background
+        label: Background
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+        label: BackgroundLop.cs
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Background/BackgroundLop.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Cat.cs
+        label: Cat.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/FalapyCat/Scripts/Game/Cat.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Cat.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Cat.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+        label: Colum.cs.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+          projectPath: Assets/FalapyCat/Scripts/Game/Colum.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+        label: ColumnPool.cs.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+          projectPath: Assets/FalapyCat/Scripts/Game/ColumnPool.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/GameControl.cs
+        label: GameControl.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/FalapyCat/Scripts/Game/GameControl.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/GameControl.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/GameControl.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Obstacle
+        label: Obstacle
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+        label: Colum.cs
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Obstacle/Colum.cs
+          originalPath: Assets/FalapyCat/Scripts/Game/Colum.cs
+          indexStatus: 6
+          workTreeStatus: 0
+      - path: Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+        label: ColumnPool.cs
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+          projectPath: Assets/FalapyCat/Scripts/Game/Obstacle/ColumnPool.cs
+          originalPath: Assets/FalapyCat/Scripts/Game/ColumnPool.cs
+          indexStatus: 6
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver.meta
+        label: PlayServicesResolver.meta
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver.meta
+          projectPath: Assets/PlayServicesResolver.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver
+        label: PlayServicesResolver
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor.meta
+        label: Editor.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor.meta
+          projectPath: Assets/PlayServicesResolver/Editor.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor
+        label: Editor
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+        label: Google.IOSResolver.dll
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+          projectPath: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+        label: Google.IOSResolver.dll.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+          projectPath: Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+        label: Google.JarResolver.dll
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+          projectPath: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+        label: Google.JarResolver.dll.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+          projectPath: Assets/PlayServicesResolver/Editor/Google.JarResolver.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+        label: Google.VersionHandler.dll
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+          projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+        label: Google.VersionHandler.dll.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+          projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+        label: Google.VersionHandlerImpl_v1.2.135.0.dll
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+          projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+        label: Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+          projectPath: Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+        label: play-services-resolver_v1.2.135.0.txt
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+          projectPath: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+        label: play-services-resolver_v1.2.135.0.txt.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+          projectPath: Assets/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Packages
+        label: Packages
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages/manifest.json
+        label: manifest.json
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages/manifest.json
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Packages/manifest.json
+          projectPath: Packages/manifest.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Packages/packages-lock.json
+        label: packages-lock.json
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages/packages-lock.json
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/Packages/packages-lock.json
+          projectPath: Packages/packages-lock.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: ProjectSettings
+        label: ProjectSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: ProjectSettings/GvhProjectSettings.xml
+        label: GvhProjectSettings.xml
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: ProjectSettings/GvhProjectSettings.xml
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/ProjectSettings/GvhProjectSettings.xml
+          projectPath: ProjectSettings/GvhProjectSettings.xml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: ProjectSettings/Packages
+        label: Packages
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: ProjectSettings/Packages/com.unity.services.mediation
+        label: com.unity.services.mediation
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+        label: Settings.json
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+          projectPath: ProjectSettings/Packages/com.unity.services.mediation/Settings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: UserSettings
+        label: UserSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings/Layouts
+        label: Layouts
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings/Layouts/default-2021.dwlt
+        label: default-2021.dwlt
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: UserSettings/Layouts/default-2021.dwlt
+          fullPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat/UserSettings/Layouts/default-2021.dwlt
+          projectPath: UserSettings/Layouts/default-2021.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       selectedNode:
         path: 
         label: 
@@ -12172,9 +14242,9 @@ MonoBehaviour:
   currentRemoteName: origin
   currentBranch: main
   currentRemoteUrl: git@github.com:disiol/FlappyCat.git
-  statusAhead: 0
+  statusAhead: 2
   statusBehind: 0
-  hasItemsToCommit: 1
+  hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: main
@@ -12188,10 +14258,10 @@ MonoBehaviour:
     updatedTimeString: 2023-01-20T23:54:23.893+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-01-21T00:46:31.430+02:00
+    updatedTimeString: 2023-01-21T01:50:52.633+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-01-21T00:48:49.209+02:00
+    updatedTimeString: 2023-01-21T01:50:52.580+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -12211,11 +14281,11 @@ MonoBehaviour:
     m_Tooltip: 
   repositoryProgressValue: 0
   repositoryProgressMessage: 
-  appManagerProgressValue: 0
-  appManagerProgressMessage: 
+  appManagerProgressValue: 1
+  appManagerProgressMessage: Initialized
   connections: []
   primaryConnectionUsername: 
---- !u!114 &13
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12244,7 +14314,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   mForceToOpen: 0
---- !u!114 &14
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12265,9 +14335,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 755
+    x: 740
     y: 119
-    width: 173
+    width: 223
     height: 740
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -12276,25 +14346,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b4bcffff
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c2c7ffffea700000
+      m_ExpandedIDs: 766dffffbc6effff247dffff6088ffff30fbffff32fbfffff25b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Colums(Clone)
+        m_OriginalName: Colums(Clone)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -37514
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 7}
+        m_ClientGUIView: {fileID: 10}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -12302,7 +14372,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 1611faaf31394026b99d451e09bdeb1b
---- !u!114 &15
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12344,7 +14414,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &16
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12365,9 +14435,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 930
+    x: 965
     y: 119
-    width: 308
+    width: 273
     height: 740
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -12386,38 +14456,38 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/FalapyCat/Scripts/Game
+    - Assets/FalapyCat/Scripts/Game/Obstacle
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 61
   m_LastFolders:
-  - Assets/FalapyCat/Scripts/Game
-  m_LastFoldersGridSize: -1
+  - Assets/FalapyCat/Scripts/Game/Obstacle
+  m_LastFoldersGridSize: 61
   m_LastProjectPath: /home/denis/IT/unity/ToMarket/TODO/FlappyCat
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e05c0000
-    m_LastClickedID: 23776
-    m_ExpandedIDs: 00000000a05b0000a85b000000ca9a3b
+    m_SelectedIDs: 605d0000
+    m_LastClickedID: 23904
+    m_ExpandedIDs: 00000000165d0000185d0000485d00004a5d0000585d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Animation
+      m_OriginalName: Animation
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 23874
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -12429,7 +14499,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a05b0000
+    m_ExpandedIDs: 00000000165d0000185d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -12456,8 +14526,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 465b0000424d0000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 465b0000424d0000f4810000ee810000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -12473,7 +14543,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -12482,10 +14552,10 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 61
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 115
---- !u!114 &17
+  m_DirectoriesAreaWidth: 151
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12508,7 +14578,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 506
-    width: 754
+    width: 739
     height: 353
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -12520,7 +14590,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 590, y: 332}
+  m_TargetSize: {x: 664, y: 332}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -12529,14 +14599,14 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 01000000000000000000000002000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 01000000000000000000000010000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -295
-    m_HBaseRangeMax: 295
+    m_HBaseRangeMin: -332
+    m_HBaseRangeMax: 332
     m_VBaseRangeMin: -166
     m_VBaseRangeMax: 166
     m_HAllowExceedBaseRangeMin: 1
@@ -12556,29 +14626,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 754
+      width: 739
       height: 332
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 377, y: 166}
+    m_Translation: {x: 369.5, y: 166}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -377
+      x: -369.5
       y: -166
-      width: 754
+      width: 739
       height: 332
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 754, y: 353}
+  m_LastWindowPixelSize: {x: 739, y: 353}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &18
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12601,7 +14671,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 119
-    width: 754
+    width: 739
     height: 366
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -12613,7 +14683,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -101, y: -1}
+      snapOffsetDelta: {x: -101, y: -26}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -12634,8 +14704,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffset: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
       index: 0
@@ -12646,7 +14716,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 1
       id: unity-search-toolbar
       index: 1
@@ -12679,7 +14749,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Light Settings
       index: 0
@@ -12690,7 +14760,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Camera
       index: 1
@@ -12701,7 +14771,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Cloth Constraints
       index: 2
@@ -12712,7 +14782,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Cloth Collisions
       index: 3
@@ -12723,7 +14793,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Navmesh Display
       index: 4
@@ -12734,7 +14804,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Agent Display
       index: 5
@@ -12745,7 +14815,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Obstacle Display
       index: 6
@@ -12756,7 +14826,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Occlusion Culling
       index: 7
@@ -12767,7 +14837,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Physics Debugger
       index: 8
@@ -12778,7 +14848,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Scene Visibility
       index: 9
@@ -12789,24 +14859,24 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
       index: 10
       layout: 4
   m_WindowGUID: fd0f81334a162c57682f9123e8dcc357
   m_Gizmos: 1
-  m_OverrideSceneCullingMask: 0
-  m_SceneIsLit: 0
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.09, y: 0.92999995, z: 0}
+    m_Target: {x: -17.150017, y: -24.07, z: 0}
     speed: 2
-    m_Value: {x: 5.09, y: 0.92999995, z: 0}
+    m_Value: {x: -8.184375, y: 4.9703126, z: 90}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -12818,7 +14888,7 @@ MonoBehaviour:
   m_SceneViewState:
     m_AlwaysRefresh: 0
     showFog: 1
-    showSkybox: 0
+    showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -12857,9 +14927,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1.3828411
+    m_Target: 1.3828416
     speed: 2
-    m_Value: 1.3828411
+    m_Value: 1.6735686
   m_Ortho:
     m_Target: 1
     speed: 2

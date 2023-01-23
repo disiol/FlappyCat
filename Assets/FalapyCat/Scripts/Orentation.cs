@@ -22,8 +22,5 @@ public class Orentation : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
 }

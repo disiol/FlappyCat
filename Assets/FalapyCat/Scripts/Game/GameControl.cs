@@ -67,7 +67,7 @@ namespace FalapyCat.Scripts.Game
             {
                 _score++;
                 //...and adjust the score text.
-                scoreText.GetComponent<TextMeshProUGUI>().text = "Score: " + _score.ToString();
+                scoreText.GetComponent<TextMeshProUGUI>().text = "Score: " + _score;
             }
 
             //If the game is not over, increase the score...

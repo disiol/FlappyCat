@@ -48,8 +48,10 @@ namespace FalapyCat.Scripts.Game
 
             if (other.gameObject.CompareTag("Wall"))
             {
-                _gameControl.live -= 1;
-                if (_gameControl.live ==0)
+                Debug.Log("other.gameObject.CompareTag = Wall");
+
+                _gameControl.live--;
+                if (_gameControl.live == 0)
                 {
                     isDead = true;
                     //...tell the Animator about it...
@@ -57,7 +59,7 @@ namespace FalapyCat.Scripts.Game
                     //...and tell the game control about it.
                     _gameControl.BirdDied();
                 }
-                else
+                else if (_gameControl.live > 0)
                 {
                     //TODO  pause how window ads
                 }
